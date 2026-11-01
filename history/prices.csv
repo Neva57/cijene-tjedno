@@ -1,0 +1,94 @@
+date,chain,item,product_id,product,pack,price_median,price_min
+2026-10-31,lidl,mlijeko,0003979,"Trajno mlijeko 1,5%",1000,0.95,0.95
+2026-10-31,lidl,svjezi_sir,0029830,Svježi sir 0% m.m.,500,1.69,1.69
+2026-10-31,lidl,jaja,6908671,PERFA Jaja podni uzgoj razred M,15,2.25,2.25
+2026-10-31,lidl,sunka,0006391,Šunka narezak,100,1.09,1.09
+2026-10-31,lidl,feta,6211913,Feta sir,200,2.39,2.39
+2026-10-31,lidl,vrhnje,0001560,"Dukat kiselo vrhnje 12%, 200g",200,0.94,0.94
+2026-10-31,lidl,kefir,6903366,"Kefir 3,5%",1000,1.65,1.65
+2026-10-31,lidl,jogurt,6908236,"Tekući jogurt 0,5%",1000,1.39,1.39
+2026-10-31,lidl,grcki,1012743,Grčki jogurt SK4,500,1.99,1.99
+2026-10-31,lidl,piletina,0006675,"Svježi pileći zabatak, cca. 500g",kg,4.09,4.09
+2026-10-31,lidl,mljeveno,0004935,"Mljeveno miješano meso XXL, 1kg",1000,5.39,5.39
+2026-10-31,lidl,oslic,6902168,"Filet oslića, Hubbsi",500,4.79,4.79
+2026-10-31,lidl,pastrva,6907065,Svježa gacka pastrva,550,5.19,5.19
+2026-10-31,lidl,sardine,0144303,Sardina u suncokretovom ulju,3,2.79,2.79
+2026-10-31,lidl,tuna,0160128,Tuna,1,1.09,1.09
+2026-10-31,lidl,kruh,0022693,Integralni raženi kruh,500,1.29,1.29
+2026-10-31,lidl,krumpir,0083224,Krumpir 2kg,2000,1.69,1.69
+2026-10-31,lidl,riza,0003941,Riža dugozrnata 5% loma,1000,1.59,1.59
+2026-10-31,lidl,tjestenina,0022427,Integralni špageti HWG,500,0.89,0.89
+2026-10-31,lidl,zob,0019661,Zobene pahuljice mekane,500,0.55,0.55
+2026-10-31,lidl,krekeri,0129376,Krekeri,100,0.55,0.55
+2026-10-31,lidl,leca,0004964,Leća SK1,500,0.99,0.99
+2026-10-31,lidl,rajcica,0082465,Rajčica grappolo,kg,1.79,1.79
+2026-10-31,lidl,rajcica_p,0002490,"Pasirana rajčica 8,5 Brix",500,0.79,0.79
+2026-10-31,lidl,krastavac,0082225,Krastavac,kg,1.69,1.69
+2026-10-31,lidl,tikvice,0082345,Tikvica,kg,1.69,1.69
+2026-10-31,lidl,mrkva,0082755,Mrkva rinfuza,kg,0.49,0.49
+2026-10-31,lidl,mahune,0029409,Mlade mahune,460,2.25,2.25
+2026-10-31,lidl,blitva,0082101,Blitva,500,1.79,1.79
+2026-10-31,lidl,brokula,0082904,Brokula 500g,500,1.49,1.49
+2026-10-31,lidl,kupus,0082955,Kupus bijeli,kg,0.79,0.79
+2026-10-31,lidl,salata,0082055,Salata kristal,1,0.55,0.55
+2026-10-31,lidl,luk,0083331,Luk crveni 1kg,1000,0.79,0.79
+2026-10-31,lidl,cesnjak,0082712,Češnjak,5,1.39,1.39
+2026-10-31,lidl,jabuka,0080185,Jabuka zelena Zlatni delišes,kg,1.19,1.19
+2026-10-31,lidl,kruska,0080275,Kruška rinfuza,kg,1.99,1.99
+2026-10-31,lidl,naranca,0080135,Naranča,kg,1.49,1.49
+2026-10-31,lidl,mandarine,0080117,Mandarina 750g,750,2.29,2.29
+2026-10-31,lidl,borovnice,0173945,Smrznute borovnice,500,4.19,4.19
+2026-10-31,lidl,ulje_m,6910329,Ekstra djevičansko maslinovo ulje,1000,4.89,4.89
+2026-10-31,lidl,ulje,6906127,Suncokretovo ulje,1000,1.49,1.49
+2026-10-31,lidl,bademi,0123652,Bademi,200,2.99,2.99
+2026-10-31,lidl,orasi,6904472,"Orah jezgra, 500g",500,4.89,4.89
+2026-10-31,lidl,ljesnjaci,6908936,"Lješnjak jezgra, 500g",500,9.99,9.99
+2026-10-31,lidl,masline,6000150,Zelene masline,400,1.89,1.89
+2026-10-31,lidl,chia,0139011,Bio Chia sjemenke,300,2.75,2.75
+2026-10-31,lidl,limun,0080170,Limun 500g,4,0.89,0.89
+2026-10-31,kaufland,mlijeko,00403941,"KLC.Trajno mlijeko1,5%m.m.1L",1000,0.85,0.85
+2026-10-31,kaufland,svjezi_sir,00137282,KLC.Sir svježi posni 7% m.m. 500g,500,1.19,1.19
+2026-10-31,kaufland,jaja,20893551,Balticovo Jaja svj.M podni uzgoj 10/1_OC,10,1.59,1.59
+2026-10-31,kaufland,sunka,00113608,Gavrilović Jeli šunka u ovit. 2600g DEL,kg,6.90,6.90
+2026-10-31,kaufland,feta,20929603,KGold.Feta sir 200g,200,3.29,3.29
+2026-10-31,kaufland,sir_light,20612536,KLC.Sir Edamer polutvrdi rezani45%mm150g,150,1.49,1.49
+2026-10-31,kaufland,vrhnje,20663039,KLC.Vrhnje kiselo 12%m.m. 180g_OC,180,0.65,0.65
+2026-10-31,kaufland,kefir,20865082,"KLC.NMNP.Kefir 3,5%m.m. 1kg",1000,1.65,1.65
+2026-10-31,kaufland,jogurt,00404660,"KLC.Tekući jogurt2,8%m.m.1kg",1000,1.69,1.69
+2026-10-31,kaufland,grcki,20975970,Kolios Grčki jogurt natural 0%m.m.500g,500,2.49,2.30
+2026-10-31,kaufland,piletina,00101251,KPur. Pileći zabatak cca 600 g,kg,4.09,4.09
+2026-10-31,kaufland,mljeveno,00098484,KPur. Miješano mljeveno meso 850 g,850,5.99,5.99
+2026-10-31,kaufland,oslic,00079533,Frozy Filet oslića smrznuti 500 g_OC,500,3.79,3.79
+2026-10-31,kaufland,pastrva,00146678,K Blue Bay Pastrva svježa 560 g,560,4.19,4.19
+2026-10-31,kaufland,sardine,01501794,Giana Sardine u biljnom ulju 125/90 g_OC,1,1.29,1.29
+2026-10-31,kaufland,tuna,00103776,KLC.Tuna u ulju komadi 185g/135g,1,1.39,1.39
+2026-10-31,kaufland,kruh,00029637,KLC.Raženi kruh 500 g,500,1.25,1.25
+2026-10-31,kaufland,krumpir,09701300,Krumpir mrežica 2 kg,2000,1.79,1.79
+2026-10-31,kaufland,riza,00119501,KLC.Riža dugog zrna 1 kg_OC,1000,1.59,1.59
+2026-10-31,kaufland,tjestenina,00065195,KBio.Penne rigate integralna tj. 500 g,500,1.19,1.19
+2026-10-31,kaufland,zob,00071801,KLC.Zobene pahuljice sitne 500g_OC,500,0.75,0.75
+2026-10-31,kaufland,krekeri,20156261,KLC.Krekeri slani 200g,200,0.88,0.88
+2026-10-31,kaufland,leca,00144950,KLC.Leća smeđa 400 g/260 g,104,0.64,0.64
+2026-10-31,kaufland,rajcica,09701740,Rajčica grapolo,kg,2.49,2.49
+2026-10-31,kaufland,rajcica_p,20797679,KLC.Rajčica pasirana 500g_OC,500,0.49,0.49
+2026-10-31,kaufland,krastavac,09700739,Krastavac,kg,1.69,1.69
+2026-10-31,kaufland,tikvice,09700763,Tikvica,kg,1.69,1.69
+2026-10-31,kaufland,mrkva,09700733,Mrkva_OC,kg,0.89,0.89
+2026-10-31,kaufland,mahune,00097013,KLC.Mlade mahune 450g,450,1.49,1.49
+2026-10-31,kaufland,blitva,00034319,Blitva vezica 500g,500,1.79,1.79
+2026-10-31,kaufland,brokula,09701160,Brokula 500g,500,1.49,1.49
+2026-10-31,kaufland,kupus,09700744,Kupus_OC,kg,0.79,0.79
+2026-10-31,kaufland,salata,09701481,Salata zelena puterica kom,1,0.99,0.99
+2026-10-31,kaufland,luk,09701720,Luk crveni 1kg,1000,0.79,0.79
+2026-10-31,kaufland,cesnjak,09702080,Češnjak mrežica 250g,5,1.59,1.59
+2026-10-31,kaufland,jabuka,09700713,Jabuka Jonagold,kg,1.29,1.29
+2026-10-31,kaufland,kruska,09700912,Kruška Conference,kg,1.99,1.99
+2026-10-31,kaufland,naranca,09700901,Naranča 2kg mrežica,2000,2.48,1.98
+2026-10-31,kaufland,mandarine,09700758,Mandarina domaća kg,kg,1.49,1.49
+2026-10-31,kaufland,borovnice,20905541,KLC.Borovnice smrznute 300g,300,2.99,2.99
+2026-10-31,kaufland,ulje_m,20668800,"KLC.Maslinovo ulje extra djev.0,75L",750,6.69,6.69
+2026-10-31,kaufland,ulje,00082016,KLC.Suncokretovo ulje 1L PET_OC,1000,1.49,1.49
+2026-10-31,kaufland,bademi,00082987,KLC.Bademi cijeli 200g vg.,200,3.59,3.59
+2026-10-31,kaufland,orasi,20736636,KLC.Orah jezgra 200g vg.,200,3.79,3.79
+2026-10-31,kaufland,ljesnjaci,20736600,KFav.Lješnjak jezgra 200 g,200,5.49,5.49
+2026-10-31,kaufland,masline,01301520,Zvijezda Masline zelene odgorč.350g/200g,200,1.99,1.99

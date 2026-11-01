@@ -1,0 +1,594 @@
+{
+ "chains": {
+  "lidl": {
+   "name": "Lidl",
+   "date": "2026-10-31",
+   "items": {
+    "mlijeko": {
+     "n": "Trajno mlijeko 1,5%",
+     "pk": 1000,
+     "pp": 0.95,
+     "id": "0003979"
+    },
+    "svjezi_sir": {
+     "n": "Svježi sir 0% m.m.",
+     "pk": 500,
+     "pp": 1.69,
+     "id": "0029830"
+    },
+    "jaja": {
+     "n": "PERFA Jaja podni uzgoj razred M",
+     "pk": 15,
+     "pp": 2.25,
+     "id": "6908671"
+    },
+    "sunka": {
+     "n": "Šunka narezak",
+     "pk": 100,
+     "pp": 1.09,
+     "id": "0006391"
+    },
+    "feta": {
+     "n": "Feta sir",
+     "pk": 200,
+     "pp": 2.39,
+     "id": "6211913"
+    },
+    "vrhnje": {
+     "n": "Dukat kiselo vrhnje 12%, 200g",
+     "pk": 200,
+     "pp": 0.94,
+     "id": "0001560"
+    },
+    "kefir": {
+     "n": "Kefir 3,5%",
+     "pk": 1000,
+     "pp": 1.65,
+     "id": "6903366"
+    },
+    "jogurt": {
+     "n": "Tekući jogurt 0,5%",
+     "pk": 1000,
+     "pp": 1.39,
+     "id": "6908236"
+    },
+    "grcki": {
+     "n": "Grčki jogurt SK4",
+     "pk": 500,
+     "pp": 1.99,
+     "id": "1012743"
+    },
+    "piletina": {
+     "n": "Svježi pileći zabatak, cca. 500g",
+     "loose": 1,
+     "st": 100,
+     "perKg": 4.09,
+     "id": "0006675"
+    },
+    "mljeveno": {
+     "n": "Mljeveno miješano meso XXL, 1kg",
+     "pk": 1000,
+     "pp": 5.39,
+     "id": "0004935"
+    },
+    "oslic": {
+     "n": "Filet oslića, Hubbsi",
+     "pk": 500,
+     "pp": 4.79,
+     "id": "6902168"
+    },
+    "pastrva": {
+     "n": "Svježa gacka pastrva",
+     "pk": 550,
+     "pp": 5.19,
+     "id": "6907065"
+    },
+    "sardine": {
+     "n": "Sardina u suncokretovom ulju",
+     "pk": 3,
+     "pp": 2.79,
+     "id": "0144303"
+    },
+    "tuna": {
+     "n": "Tuna",
+     "pk": 1,
+     "pp": 1.09,
+     "id": "0160128"
+    },
+    "kruh": {
+     "n": "Integralni raženi kruh",
+     "pk": 500,
+     "pp": 1.29,
+     "id": "0022693"
+    },
+    "krumpir": {
+     "n": "Krumpir 2kg",
+     "pk": 2000,
+     "pp": 1.69,
+     "id": "0083224"
+    },
+    "riza": {
+     "n": "Riža dugozrnata 5% loma",
+     "pk": 1000,
+     "pp": 1.59,
+     "id": "0003941"
+    },
+    "tjestenina": {
+     "n": "Integralni špageti HWG",
+     "pk": 500,
+     "pp": 0.89,
+     "id": "0022427"
+    },
+    "zob": {
+     "n": "Zobene pahuljice mekane",
+     "pk": 500,
+     "pp": 0.55,
+     "id": "0019661"
+    },
+    "krekeri": {
+     "n": "Krekeri",
+     "pk": 100,
+     "pp": 0.55,
+     "id": "0129376"
+    },
+    "leca": {
+     "n": "Leća SK1",
+     "pk": 500,
+     "pp": 0.99,
+     "id": "0004964"
+    },
+    "rajcica": {
+     "n": "Rajčica grappolo",
+     "loose": 1,
+     "st": 100,
+     "perKg": 1.79,
+     "id": "0082465"
+    },
+    "rajcica_p": {
+     "n": "Pasirana rajčica 8,5 Brix",
+     "pk": 500,
+     "pp": 0.79,
+     "id": "0002490"
+    },
+    "krastavac": {
+     "n": "Krastavac",
+     "loose": 1,
+     "st": 100,
+     "perKg": 1.69,
+     "id": "0082225"
+    },
+    "tikvice": {
+     "n": "Tikvica",
+     "loose": 1,
+     "st": 100,
+     "perKg": 1.69,
+     "id": "0082345"
+    },
+    "mrkva": {
+     "n": "Mrkva rinfuza",
+     "loose": 1,
+     "st": 100,
+     "perKg": 0.49,
+     "id": "0082755"
+    },
+    "mahune": {
+     "n": "Mlade mahune",
+     "pk": 460,
+     "pp": 2.25,
+     "id": "0029409"
+    },
+    "blitva": {
+     "n": "Blitva",
+     "pk": 500,
+     "pp": 1.79,
+     "id": "0082101"
+    },
+    "brokula": {
+     "n": "Brokula 500g",
+     "pk": 500,
+     "pp": 1.49,
+     "id": "0082904"
+    },
+    "kupus": {
+     "n": "Kupus bijeli",
+     "loose": 1,
+     "st": 500,
+     "perKg": 0.79,
+     "id": "0082955"
+    },
+    "salata": {
+     "n": "Salata kristal",
+     "pk": 1,
+     "pp": 0.55,
+     "id": "0082055"
+    },
+    "luk": {
+     "n": "Luk crveni 1kg",
+     "pk": 1000,
+     "pp": 0.79,
+     "id": "0083331"
+    },
+    "cesnjak": {
+     "n": "Češnjak",
+     "pk": 5,
+     "pp": 1.39,
+     "id": "0082712"
+    },
+    "jabuka": {
+     "n": "Jabuka zelena Zlatni delišes",
+     "loose": 1,
+     "st": 100,
+     "perKg": 1.19,
+     "id": "0080185"
+    },
+    "kruska": {
+     "n": "Kruška rinfuza",
+     "loose": 1,
+     "st": 100,
+     "perKg": 1.99,
+     "id": "0080275"
+    },
+    "naranca": {
+     "n": "Naranča",
+     "loose": 1,
+     "st": 100,
+     "perKg": 1.49,
+     "id": "0080135"
+    },
+    "mandarine": {
+     "n": "Mandarina 750g",
+     "pk": 750,
+     "pp": 2.29,
+     "id": "0080117"
+    },
+    "borovnice": {
+     "n": "Smrznute borovnice",
+     "pk": 500,
+     "pp": 4.19,
+     "id": "0173945"
+    },
+    "ulje_m": {
+     "n": "Ekstra djevičansko maslinovo ulje",
+     "pk": 1000,
+     "pp": 4.89,
+     "id": "6910329"
+    },
+    "ulje": {
+     "n": "Suncokretovo ulje",
+     "pk": 1000,
+     "pp": 1.49,
+     "id": "6906127"
+    },
+    "bademi": {
+     "n": "Bademi",
+     "pk": 200,
+     "pp": 2.99,
+     "id": "0123652"
+    },
+    "orasi": {
+     "n": "Orah jezgra, 500g",
+     "pk": 500,
+     "pp": 4.89,
+     "id": "6904472"
+    },
+    "ljesnjaci": {
+     "n": "Lješnjak jezgra, 500g",
+     "pk": 500,
+     "pp": 9.99,
+     "id": "6908936"
+    },
+    "masline": {
+     "n": "Zelene masline",
+     "pk": 400,
+     "pp": 1.89,
+     "id": "6000150"
+    },
+    "chia": {
+     "n": "Bio Chia sjemenke",
+     "pk": 300,
+     "pp": 2.75,
+     "id": "0139011"
+    },
+    "limun": {
+     "n": "Limun 500g",
+     "pk": 4,
+     "pp": 0.89,
+     "id": "0080170"
+    }
+   }
+  },
+  "kaufland": {
+   "name": "Kaufland",
+   "date": "2026-10-31",
+   "items": {
+    "mlijeko": {
+     "n": "KLC.Trajno mlijeko1,5%m.m.1L",
+     "pk": 1000,
+     "pp": 0.85,
+     "id": "00403941"
+    },
+    "svjezi_sir": {
+     "n": "KLC.Sir svježi posni 7% m.m. 500g",
+     "pk": 500,
+     "pp": 1.19,
+     "id": "00137282"
+    },
+    "jaja": {
+     "n": "Balticovo Jaja svj.M podni uzgoj 10/1_OC",
+     "pk": 10,
+     "pp": 1.59,
+     "id": "20893551"
+    },
+    "sunka": {
+     "n": "Gavrilović Jeli šunka u ovit. 2600g DEL",
+     "loose": 1,
+     "st": 100,
+     "perKg": 6.9,
+     "id": "00113608"
+    },
+    "feta": {
+     "n": "KGold.Feta sir 200g",
+     "pk": 200,
+     "pp": 3.29,
+     "id": "20929603"
+    },
+    "sir_light": {
+     "n": "KLC.Sir Edamer polutvrdi rezani45%mm150g",
+     "pk": 150,
+     "pp": 1.49,
+     "id": "20612536"
+    },
+    "vrhnje": {
+     "n": "KLC.Vrhnje kiselo 12%m.m. 180g_OC",
+     "pk": 180,
+     "pp": 0.65,
+     "id": "20663039"
+    },
+    "kefir": {
+     "n": "KLC.NMNP.Kefir 3,5%m.m. 1kg",
+     "pk": 1000,
+     "pp": 1.65,
+     "id": "20865082"
+    },
+    "jogurt": {
+     "n": "KLC.Tekući jogurt2,8%m.m.1kg",
+     "pk": 1000,
+     "pp": 1.69,
+     "id": "00404660"
+    },
+    "grcki": {
+     "n": "Kolios Grčki jogurt natural 0%m.m.500g",
+     "pk": 500,
+     "pp": 2.49,
+     "id": "20975970"
+    },
+    "piletina": {
+     "n": "KPur. Pileći zabatak cca 600 g",
+     "loose": 1,
+     "st": 100,
+     "perKg": 4.09,
+     "id": "00101251"
+    },
+    "mljeveno": {
+     "n": "KPur. Miješano mljeveno meso 850 g",
+     "pk": 850,
+     "pp": 5.99,
+     "id": "00098484"
+    },
+    "oslic": {
+     "n": "Frozy Filet oslića smrznuti 500 g_OC",
+     "pk": 500,
+     "pp": 3.79,
+     "id": "00079533"
+    },
+    "pastrva": {
+     "n": "K Blue Bay Pastrva svježa 560 g",
+     "pk": 560,
+     "pp": 4.19,
+     "id": "00146678"
+    },
+    "sardine": {
+     "n": "Giana Sardine u biljnom ulju 125/90 g_OC",
+     "pk": 1,
+     "pp": 1.29,
+     "id": "01501794"
+    },
+    "tuna": {
+     "n": "KLC.Tuna u ulju komadi 185g/135g",
+     "pk": 1,
+     "pp": 1.39,
+     "id": "00103776"
+    },
+    "kruh": {
+     "n": "KLC.Raženi kruh 500 g",
+     "pk": 500,
+     "pp": 1.25,
+     "id": "00029637"
+    },
+    "krumpir": {
+     "n": "Krumpir mrežica 2 kg",
+     "pk": 2000,
+     "pp": 1.79,
+     "id": "09701300"
+    },
+    "riza": {
+     "n": "KLC.Riža dugog zrna 1 kg_OC",
+     "pk": 1000,
+     "pp": 1.59,
+     "id": "00119501"
+    },
+    "tjestenina": {
+     "n": "KBio.Penne rigate integralna tj. 500 g",
+     "pk": 500,
+     "pp": 1.19,
+     "id": "00065195"
+    },
+    "zob": {
+     "n": "KLC.Zobene pahuljice sitne 500g_OC",
+     "pk": 500,
+     "pp": 0.75,
+     "id": "00071801"
+    },
+    "krekeri": {
+     "n": "KLC.Krekeri slani 200g",
+     "pk": 200,
+     "pp": 0.88,
+     "id": "20156261"
+    },
+    "leca": {
+     "n": "KLC.Leća smeđa 400 g/260 g (konzerva, 260 g ocijeđene)",
+     "pk": 104,
+     "pp": 0.64,
+     "id": "00144950"
+    },
+    "rajcica": {
+     "n": "Rajčica grapolo",
+     "loose": 1,
+     "st": 100,
+     "perKg": 2.49,
+     "id": "09701740"
+    },
+    "rajcica_p": {
+     "n": "KLC.Rajčica pasirana 500g_OC",
+     "pk": 500,
+     "pp": 0.49,
+     "id": "20797679"
+    },
+    "krastavac": {
+     "n": "Krastavac",
+     "loose": 1,
+     "st": 100,
+     "perKg": 1.69,
+     "id": "09700739"
+    },
+    "tikvice": {
+     "n": "Tikvica",
+     "loose": 1,
+     "st": 100,
+     "perKg": 1.69,
+     "id": "09700763"
+    },
+    "mrkva": {
+     "n": "Mrkva_OC",
+     "loose": 1,
+     "st": 100,
+     "perKg": 0.89,
+     "id": "09700733"
+    },
+    "mahune": {
+     "n": "KLC.Mlade mahune 450g",
+     "pk": 450,
+     "pp": 1.49,
+     "id": "00097013"
+    },
+    "blitva": {
+     "n": "Blitva vezica 500g",
+     "pk": 500,
+     "pp": 1.79,
+     "id": "00034319"
+    },
+    "brokula": {
+     "n": "Brokula 500g",
+     "pk": 500,
+     "pp": 1.49,
+     "id": "09701160"
+    },
+    "kupus": {
+     "n": "Kupus_OC",
+     "loose": 1,
+     "st": 500,
+     "perKg": 0.79,
+     "id": "09700744"
+    },
+    "salata": {
+     "n": "Salata zelena puterica kom",
+     "pk": 1,
+     "pp": 0.99,
+     "id": "09701481"
+    },
+    "luk": {
+     "n": "Luk crveni 1kg",
+     "pk": 1000,
+     "pp": 0.79,
+     "id": "09701720"
+    },
+    "cesnjak": {
+     "n": "Češnjak mrežica 250g",
+     "pk": 5,
+     "pp": 1.59,
+     "id": "09702080"
+    },
+    "jabuka": {
+     "n": "Jabuka Jonagold",
+     "loose": 1,
+     "st": 100,
+     "perKg": 1.29,
+     "id": "09700713"
+    },
+    "kruska": {
+     "n": "Kruška Conference",
+     "loose": 1,
+     "st": 100,
+     "perKg": 1.99,
+     "id": "09700912"
+    },
+    "naranca": {
+     "n": "Naranča 2kg mrežica",
+     "pk": 2000,
+     "pp": 2.48,
+     "id": "09700901"
+    },
+    "mandarine": {
+     "n": "Mandarina domaća kg",
+     "loose": 1,
+     "st": 100,
+     "perKg": 1.49,
+     "id": "09700758"
+    },
+    "borovnice": {
+     "n": "KLC.Borovnice smrznute 300g",
+     "pk": 300,
+     "pp": 2.99,
+     "id": "20905541"
+    },
+    "ulje_m": {
+     "n": "KLC.Maslinovo ulje extra djev.0,75L",
+     "pk": 750,
+     "pp": 6.69,
+     "id": "20668800"
+    },
+    "ulje": {
+     "n": "KLC.Suncokretovo ulje 1L PET_OC · u malo poslovnica",
+     "pk": 1000,
+     "pp": 1.49,
+     "id": "00082016"
+    },
+    "bademi": {
+     "n": "KLC.Bademi cijeli 200g vg. · u malo poslovnica",
+     "pk": 200,
+     "pp": 3.59,
+     "id": "00082987"
+    },
+    "orasi": {
+     "n": "KLC.Orah jezgra 200g vg.",
+     "pk": 200,
+     "pp": 3.79,
+     "id": "20736636"
+    },
+    "ljesnjaci": {
+     "n": "KFav.Lješnjak jezgra 200 g",
+     "pk": 200,
+     "pp": 5.49,
+     "id": "20736600"
+    },
+    "masline": {
+     "n": "Zvijezda Masline zelene odgorč.350g/200g",
+     "pk": 200,
+     "pp": 1.99,
+     "id": "01301520"
+    }
+   }
+  }
+ },
+ "date": "2026-10-31"
+}

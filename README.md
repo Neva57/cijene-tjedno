@@ -8,3 +8,9 @@ Every Friday, a GitHub Action downloads the previous day's public price archive 
 The source is the price lists that chains have to publish under NN 75/2025. Only public price data is stored here.
 
 To run it now, go to Actions → "Tjedne cijene" → "Run workflow".
+
+## From prices to the shopping list
+
+- `mapping.json` names the product in each chain that stands for each shopping-list item, e.g. "svježi sir" → the 500 g pack at Lidl and at Kaufland. If a product disappears, the closest widely stocked replacement is picked automatically and marked "zamjena".
+- `data/app-prices.json` holds the current price per item and chain, which is what the meal-plan app reads.
+- `history/prices.csv` gets one line per item, chain and price date, for tracking prices over time.
