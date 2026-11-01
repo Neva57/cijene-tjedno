@@ -1,0 +1,59 @@
+name: Tjedne cijene
+
+on:
+  schedule:
+    - cron: "0 4 * * 4"   # every Thursday, 04:00 UTC (05:00/06:00 in Croatia)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+env:
+  CHAINS: lidl,kaufland
+  CIJENE_API_SHA: f2a455f419e1d542baa7df68599cc4388bd5a9ea
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get cijene-api crawler (pinned version)
+        uses: actions/checkout@v4
+        with:
+          repository: senko/cijene-api
+          ref: ${{ env.CIJENE_API_SHA }}
+          path: cijene-api
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install crawler
+        working-directory: cijene-api
+        run: |
+          pip install uv
+          uv sync --no-dev
+
+      - name: Crawl today's prices
+        working-directory: cijene-api
+        run: uv run -m crawler.cli.crawl ../out -c "$CHAINS" -z false
+
+      - name: Build price catalog
+        run: |
+          for c in ${CHAINS//,/ }; do
+            if [ -f "$(ls -d out/*/ | tail -1)$c/prices.csv" ]; then
+              python scripts/aggregate.py out data "$c"
+            else
+              echo "::warning::No data for $c today, keeping last week's file"
+            fi
+          done
+
+      - name: Commit
+        run: |
+          git config user.name "cijene-bot"
+          git config user.email "cijene-bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "Cijene $CHAINS $(date +%F)"
+          git push
