@@ -1,18 +1,17 @@
 """Turn one day's crawler output for a chain into a compact price catalog.
 
-Input:  <out>/<YYYY-MM-DD>/<chain>/{stores,products,prices}.csv  (cijene-api crawler format)
+Input:  <day>/<chain>/{stores,products,prices}.csv  (cijene-api crawler output for one day)
 Output: data/<chain>.csv   one row per product with chain-wide price statistics
         data/meta.json     per chain: crawl date and row counts
 """
 import csv, json, statistics, sys
 from pathlib import Path
 
-def main(out_root: str, data_dir: str, chain: str) -> None:
-    days = sorted(p for p in Path(out_root).iterdir() if p.is_dir())
-    if not days:
-        sys.exit("no crawl output found")
-    day = days[-1]
+def main(day_dir: str, data_dir: str, chain: str) -> None:
+    day = Path(day_dir)
     src = day / chain
+    if not (src / "prices.csv").exists():
+        sys.exit(f"no crawl output in {src}")
     products = {}
     with open(src / "products.csv", newline="", encoding="utf-8") as f:
         for r in csv.DictReader(f):

@@ -10,23 +10,24 @@ permissions:
 
 env:
   CHAINS: lidl,kaufland
+  DAYS_BACK: 6          # if today's list isn't published yet, use the newest of the last days
   CIJENE_API_SHA: f2a455f419e1d542baa7df68599cc4388bd5a9ea
 
 jobs:
   crawl:
-    runs-on: ubuntu-latest
-    timeout-minutes: 30
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Get cijene-api crawler (pinned version)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: senko/cijene-api
           ref: ${{ env.CIJENE_API_SHA }}
           path: cijene-api
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.13"
 
@@ -36,24 +37,50 @@ jobs:
           pip install uv
           uv sync --no-dev
 
-      - name: Crawl today's prices
+      - name: Crawl newest published price lists
         working-directory: cijene-api
-        run: uv run -m crawler.cli.crawl ../out -c "$CHAINS" -z false
+        run: |
+          : > ../found.txt
+          for c in ${CHAINS//,/ }; do
+            for back in $(seq 0 "$DAYS_BACK"); do
+              d=$(date -u -d "-$back day" +%F)
+              echo "::group::$c $d"
+              uv run -m crawler.cli.crawl ../out -c "$c" -d "$d" -z false -v info 2>&1 | tee -a ../crawl.log || true
+              echo "::endgroup::"
+              if [ -s "../out/$d/$c/prices.csv" ]; then
+                echo "$c=$d" >> ../found.txt
+                echo "::notice::$c: price list from $d"
+                break
+              fi
+            done
+          done
+          grep -E "ERROR|Blocked|blocked" ../crawl.log | head -20 | while read -r line; do echo "::warning::$line"; done || true
 
       - name: Build price catalog
         run: |
           for c in ${CHAINS//,/ }; do
-            if [ -f "$(ls -d out/*/ | tail -1)$c/prices.csv" ]; then
-              python scripts/aggregate.py out data "$c"
+            d=$(grep "^$c=" found.txt | tail -1 | cut -d= -f2 || true)
+            if [ -n "$d" ]; then
+              python scripts/aggregate.py "out/$d" data "$c"
             else
-              echo "::warning::No data for $c today, keeping last week's file"
+              echo "::error::No published price list for $c in the last $DAYS_BACK days, keeping the previous file"
             fi
           done
+          if [ ! -s found.txt ]; then echo "::error::No prices collected for any chain"; exit 1; fi
+
+      - name: Keep the crawl log
+        if: always()
+        uses: actions/upload-artifact@v5
+        with:
+          name: crawl-log
+          path: crawl.log
+          if-no-files-found: ignore
+          retention-days: 14
 
       - name: Commit
         run: |
           git config user.name "cijene-bot"
           git config user.email "cijene-bot@users.noreply.github.com"
           git add data
-          git diff --cached --quiet || git commit -m "Cijene $CHAINS $(date +%F)"
+          git diff --cached --quiet || git commit -m "Cijene $(date +%F)"
           git push
