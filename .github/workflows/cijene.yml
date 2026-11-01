@@ -2,7 +2,7 @@ name: Tjedne cijene
 
 on:
   schedule:
-    - cron: "0 4 * * 4"   # every Thursday, 04:00 UTC (05:00/06:00 in Croatia)
+    - cron: "0 6 * * 5"   # every Friday, 06:00 UTC (07:00/08:00 in Croatia), uses Thursday's archive
   workflow_dispatch: {}
 
 permissions:
@@ -10,75 +10,76 @@ permissions:
 
 env:
   CHAINS: lidl,kaufland
-  DAYS_BACK: 6          # if today's list isn't published yet, use the newest of the last days
+  ARCHIVE_LIST: https://api.cijene.dev/v0/list
   CIJENE_API_SHA: f2a455f419e1d542baa7df68599cc4388bd5a9ea
 
 jobs:
-  crawl:
+  prices:
     runs-on: ubuntu-24.04
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v5
 
-      - name: Get cijene-api crawler (pinned version)
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Download the newest cijene.dev daily archive
+        id: archive
+        run: |
+          curl -fsSL --retry 3 "$ARCHIVE_LIST" -o list.json
+          read -r DATE URL < <(python -c "import json;a=json.load(open('list.json'))['archives'];a.sort(key=lambda x:x['date'],reverse=True);print(a[0]['date'],a[0]['url'])")
+          echo "Archive $DATE: $URL"
+          curl -fsSL --retry 3 "$URL" -o archive.zip
+          mkdir -p "out/$DATE"
+          for c in ${CHAINS//,/ }; do
+            unzip -q -o archive.zip "$c/*" -d "out/$DATE" || echo "::warning::$c is not in the $DATE archive"
+          done
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+
+      - name: Build price catalog
+        id: build
+        run: |
+          d="${{ steps.archive.outputs.date }}"
+          missing=""
+          for c in ${CHAINS//,/ }; do
+            if [ -s "out/$d/$c/prices.csv" ]; then
+              python scripts/aggregate.py "out/$d" data "$c"
+            else
+              missing="$missing,$c"
+            fi
+          done
+          echo "missing=${missing#,}" >> "$GITHUB_OUTPUT"
+
+      # Fallback: crawl a chain ourselves only if the archive didn't have it
+      - name: Get crawler (fallback)
+        if: steps.build.outputs.missing != ''
         uses: actions/checkout@v5
         with:
           repository: senko/cijene-api
           ref: ${{ env.CIJENE_API_SHA }}
           path: cijene-api
 
-      - uses: actions/setup-python@v6
-        with:
-          python-version: "3.13"
-
-      - name: Install crawler
+      - name: Crawl missing chains (fallback)
+        if: steps.build.outputs.missing != ''
         working-directory: cijene-api
         run: |
-          pip install uv
-          uv sync --no-dev
-
-      - name: Crawl newest published price lists
-        working-directory: cijene-api
-        run: |
-          : > ../found.txt
-          for c in ${CHAINS//,/ }; do
-            for back in $(seq 0 "$DAYS_BACK"); do
+          pip install -q uv && uv sync -q --no-dev
+          for c in $(echo "${{ steps.build.outputs.missing }}" | tr ',' ' '); do
+            for back in 0 1 2 3 4 5 6; do
               d=$(date -u -d "-$back day" +%F)
-              echo "::group::$c $d"
-              uv run -m crawler.cli.crawl ../out -c "$c" -d "$d" -z false -v info 2>&1 | tee -a ../crawl.log || true
-              echo "::endgroup::"
+              uv run -m crawler.cli.crawl ../out -c "$c" -d "$d" -z false 2>&1 | tail -5 || true
               if [ -s "../out/$d/$c/prices.csv" ]; then
-                echo "$c=$d" >> ../found.txt
-                echo "::notice::$c: price list from $d"
+                (cd .. && python scripts/aggregate.py "out/$d" data "$c")
                 break
               fi
             done
+            [ -s "../data/$c.csv" ] || echo "::error::No prices for $c, keeping the previous file"
           done
-          grep -E "ERROR|Blocked|blocked" ../crawl.log | head -20 | while read -r line; do echo "::warning::$line"; done || true
-
-      - name: Build price catalog
-        run: |
-          for c in ${CHAINS//,/ }; do
-            d=$(grep "^$c=" found.txt | tail -1 | cut -d= -f2 || true)
-            if [ -n "$d" ]; then
-              python scripts/aggregate.py "out/$d" data "$c"
-            else
-              echo "::error::No published price list for $c in the last $DAYS_BACK days, keeping the previous file"
-            fi
-          done
-          if [ ! -s found.txt ]; then echo "::error::No prices collected for any chain"; exit 1; fi
-
-      - name: Keep the crawl log
-        if: always()
-        uses: actions/upload-artifact@v5
-        with:
-          name: crawl-log
-          path: crawl.log
-          if-no-files-found: ignore
-          retention-days: 14
 
       - name: Commit
         run: |
+          ls data/*.csv >/dev/null 2>&1 || { echo "::error::No price data at all"; exit 1; }
           git config user.name "cijene-bot"
           git config user.email "cijene-bot@users.noreply.github.com"
           git add data
