@@ -1,0 +1,12 @@
+{
+ "lidl": {
+  "date": "2026-10-31",
+  "stores": 116,
+  "products": 7016
+ },
+ "kaufland": {
+  "date": "2026-10-31",
+  "stores": 53,
+  "products": 19460
+ }
+}
