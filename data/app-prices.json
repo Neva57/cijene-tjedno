@@ -2,7 +2,7 @@
  "chains": {
   "lidl": {
    "name": "Lidl",
-   "date": "2026-10-31",
+   "date": "2026-11-06",
    "items": {
     "mlijeko": {
      "n": "Trajno mlijeko 1,5%",
@@ -68,7 +68,7 @@
     "mljeveno": {
      "n": "Mljeveno miješano meso XXL, 1kg",
      "pk": 1000,
-     "pp": 5.39,
+     "pp": 5.99,
      "id": "0004935"
     },
     "oslic": {
@@ -110,7 +110,7 @@
     "riza": {
      "n": "Riža dugozrnata 5% loma",
      "pk": 1000,
-     "pp": 1.59,
+     "pp": 0.99,
      "id": "0003941"
     },
     "tjestenina": {
@@ -122,13 +122,13 @@
     "zob": {
      "n": "Zobene pahuljice mekane",
      "pk": 500,
-     "pp": 0.55,
+     "pp": 0.75,
      "id": "0019661"
     },
     "krekeri": {
      "n": "Krekeri",
      "pk": 100,
-     "pp": 0.55,
+     "pp": 0.69,
      "id": "0129376"
     },
     "leca": {
@@ -141,13 +141,13 @@
      "n": "Rajčica grappolo",
      "loose": 1,
      "st": 100,
-     "perKg": 1.79,
+     "perKg": 2.49,
      "id": "0082465"
     },
     "rajcica_p": {
      "n": "Pasirana rajčica 8,5 Brix",
      "pk": 500,
-     "pp": 0.79,
+     "pp": 0.99,
      "id": "0002490"
     },
     "krastavac": {
@@ -168,7 +168,7 @@
      "n": "Mrkva rinfuza",
      "loose": 1,
      "st": 100,
-     "perKg": 0.49,
+     "perKg": 0.79,
      "id": "0082755"
     },
     "mahune": {
@@ -193,13 +193,13 @@
      "n": "Kupus bijeli",
      "loose": 1,
      "st": 500,
-     "perKg": 0.79,
+     "perKg": 0.45,
      "id": "0082955"
     },
     "salata": {
      "n": "Salata kristal",
      "pk": 1,
-     "pp": 0.55,
+     "pp": 0.89,
      "id": "0082055"
     },
     "luk": {
@@ -218,7 +218,7 @@
      "n": "Jabuka zelena Zlatni delišes",
      "loose": 1,
      "st": 100,
-     "perKg": 1.19,
+     "perKg": 1.69,
      "id": "0080185"
     },
     "kruska": {
@@ -256,7 +256,7 @@
     "ulje": {
      "n": "Suncokretovo ulje",
      "pk": 1000,
-     "pp": 1.49,
+     "pp": 1.4,
      "id": "6906127"
     },
     "bademi": {
@@ -299,7 +299,7 @@
   },
   "kaufland": {
    "name": "Kaufland",
-   "date": "2026-10-31",
+   "date": "2026-11-06",
    "items": {
     "mlijeko": {
      "n": "KLC.Trajno mlijeko1,5%m.m.1L",
@@ -310,13 +310,13 @@
     "svjezi_sir": {
      "n": "KLC.Sir svježi posni 7% m.m. 500g",
      "pk": 500,
-     "pp": 1.19,
+     "pp": 1.69,
      "id": "00137282"
     },
     "jaja": {
      "n": "Balticovo Jaja svj.M podni uzgoj 10/1_OC",
      "pk": 10,
-     "pp": 1.59,
+     "pp": 2.39,
      "id": "20893551"
     },
     "sunka": {
@@ -335,7 +335,7 @@
     "sir_light": {
      "n": "KLC.Sir Edamer polutvrdi rezani45%mm150g",
      "pk": 150,
-     "pp": 1.49,
+     "pp": 0.99,
      "id": "20612536"
     },
     "vrhnje": {
@@ -378,13 +378,13 @@
     "oslic": {
      "n": "Frozy Filet oslića smrznuti 500 g_OC",
      "pk": 500,
-     "pp": 3.79,
+     "pp": 4.79,
      "id": "00079533"
     },
     "pastrva": {
      "n": "K Blue Bay Pastrva svježa 560 g",
      "pk": 560,
-     "pp": 4.19,
+     "pp": 5.29,
      "id": "00146678"
     },
     "sardine": {
@@ -402,7 +402,7 @@
     "kruh": {
      "n": "KLC.Raženi kruh 500 g",
      "pk": 500,
-     "pp": 1.25,
+     "pp": 0.99,
      "id": "00029637"
     },
     "krumpir": {
@@ -438,7 +438,7 @@
     "leca": {
      "n": "KLC.Leća smeđa 400 g/260 g (konzerva, 260 g ocijeđene)",
      "pk": 104,
-     "pp": 0.64,
+     "pp": 0.69,
      "id": "00144950"
     },
     "rajcica": {
@@ -451,7 +451,7 @@
     "rajcica_p": {
      "n": "KLC.Rajčica pasirana 500g_OC",
      "pk": 500,
-     "pp": 0.49,
+     "pp": 0.7,
      "id": "20797679"
     },
     "krastavac": {
@@ -522,7 +522,7 @@
      "n": "Jabuka Jonagold",
      "loose": 1,
      "st": 100,
-     "perKg": 1.29,
+     "perKg": 1.69,
      "id": "09700713"
     },
     "kruska": {
@@ -548,7 +548,7 @@
     "borovnice": {
      "n": "KLC.Borovnice smrznute 300g",
      "pk": 300,
-     "pp": 2.99,
+     "pp": 3.05,
      "id": "20905541"
     },
     "ulje_m": {
@@ -584,11 +584,11 @@
     "masline": {
      "n": "Zvijezda Masline zelene odgorč.350g/200g",
      "pk": 200,
-     "pp": 1.99,
+     "pp": 2.69,
      "id": "01301520"
     }
    }
   }
  },
- "date": "2026-10-31"
+ "date": "2026-11-06"
 }
