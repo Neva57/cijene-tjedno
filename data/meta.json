@@ -1,12 +1,12 @@
 {
  "lidl": {
-  "date": "2026-11-06",
+  "date": "2026-11-13",
   "stores": 116,
-  "products": 6912
+  "products": 7020
  },
  "kaufland": {
-  "date": "2026-11-06",
+  "date": "2026-11-13",
   "stores": 53,
-  "products": 19629
+  "products": 19757
  }
 }

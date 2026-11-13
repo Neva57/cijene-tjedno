@@ -2,7 +2,7 @@
  "chains": {
   "lidl": {
    "name": "Lidl",
-   "date": "2026-11-06",
+   "date": "2026-11-13",
    "items": {
     "mlijeko": {
      "n": "Trajno mlijeko 1,5%",
@@ -68,7 +68,7 @@
     "mljeveno": {
      "n": "Mljeveno miješano meso XXL, 1kg",
      "pk": 1000,
-     "pp": 5.99,
+     "pp": 5.19,
      "id": "0004935"
     },
     "oslic": {
@@ -80,7 +80,7 @@
     "pastrva": {
      "n": "Svježa gacka pastrva",
      "pk": 550,
-     "pp": 5.19,
+     "pp": 4.39,
      "id": "6907065"
     },
     "sardine": {
@@ -104,13 +104,13 @@
     "krumpir": {
      "n": "Krumpir 2kg",
      "pk": 2000,
-     "pp": 1.69,
+     "pp": 1.29,
      "id": "0083224"
     },
     "riza": {
      "n": "Riža dugozrnata 5% loma",
      "pk": 1000,
-     "pp": 0.99,
+     "pp": 1.59,
      "id": "0003941"
     },
     "tjestenina": {
@@ -141,7 +141,7 @@
      "n": "Rajčica grappolo",
      "loose": 1,
      "st": 100,
-     "perKg": 2.49,
+     "perKg": 1.79,
      "id": "0082465"
     },
     "rajcica_p": {
@@ -154,7 +154,7 @@
      "n": "Krastavac",
      "loose": 1,
      "st": 100,
-     "perKg": 1.69,
+     "perKg": 1.29,
      "id": "0082225"
     },
     "tikvice": {
@@ -168,7 +168,7 @@
      "n": "Mrkva rinfuza",
      "loose": 1,
      "st": 100,
-     "perKg": 0.79,
+     "perKg": 0.49,
      "id": "0082755"
     },
     "mahune": {
@@ -193,7 +193,7 @@
      "n": "Kupus bijeli",
      "loose": 1,
      "st": 500,
-     "perKg": 0.45,
+     "perKg": 0.55,
      "id": "0082955"
     },
     "salata": {
@@ -225,7 +225,7 @@
      "n": "Kruška rinfuza",
      "loose": 1,
      "st": 100,
-     "perKg": 1.99,
+     "perKg": 1.29,
      "id": "0080275"
     },
     "naranca": {
@@ -256,7 +256,7 @@
     "ulje": {
      "n": "Suncokretovo ulje",
      "pk": 1000,
-     "pp": 1.4,
+     "pp": 1.49,
      "id": "6906127"
     },
     "bademi": {
@@ -299,12 +299,12 @@
   },
   "kaufland": {
    "name": "Kaufland",
-   "date": "2026-11-06",
+   "date": "2026-11-13",
    "items": {
     "mlijeko": {
      "n": "KLC.Trajno mlijeko1,5%m.m.1L",
      "pk": 1000,
-     "pp": 0.85,
+     "pp": 0.6,
      "id": "00403941"
     },
     "svjezi_sir": {
@@ -335,7 +335,7 @@
     "sir_light": {
      "n": "KLC.Sir Edamer polutvrdi rezani45%mm150g",
      "pk": 150,
-     "pp": 0.99,
+     "pp": 1.49,
      "id": "20612536"
     },
     "vrhnje": {
@@ -357,7 +357,7 @@
      "id": "00404660"
     },
     "grcki": {
-     "n": "Kolios Grčki jogurt natural 0%m.m.500g",
+     "n": "Kolios Grčki jogurt natural 0%m.m.500g · u malo poslovnica",
      "pk": 500,
      "pp": 2.49,
      "id": "20975970"
@@ -402,7 +402,7 @@
     "kruh": {
      "n": "KLC.Raženi kruh 500 g",
      "pk": 500,
-     "pp": 0.99,
+     "pp": 1.25,
      "id": "00029637"
     },
     "krumpir": {
@@ -472,7 +472,7 @@
      "n": "Mrkva_OC",
      "loose": 1,
      "st": 100,
-     "perKg": 0.89,
+     "perKg": 0.49,
      "id": "09700733"
     },
     "mahune": {
@@ -490,7 +490,7 @@
     "brokula": {
      "n": "Brokula 500g",
      "pk": 500,
-     "pp": 1.49,
+     "pp": 0.99,
      "id": "09701160"
     },
     "kupus": {
@@ -590,5 +590,5 @@
    }
   }
  },
- "date": "2026-11-06"
+ "date": "2026-11-13"
 }
