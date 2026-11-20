@@ -2,7 +2,7 @@
  "chains": {
   "lidl": {
    "name": "Lidl",
-   "date": "2026-11-13",
+   "date": "2026-11-16",
    "items": {
     "mlijeko": {
      "n": "Trajno mlijeko 1,5%",
@@ -62,7 +62,7 @@
      "n": "Svježi pileći zabatak, cca. 500g",
      "loose": 1,
      "st": 100,
-     "perKg": 4.09,
+     "perKg": 3.99,
      "id": "0006675"
     },
     "mljeveno": {
@@ -80,7 +80,7 @@
     "pastrva": {
      "n": "Svježa gacka pastrva",
      "pk": 550,
-     "pp": 4.39,
+     "pp": 5.19,
      "id": "6907065"
     },
     "sardine": {
@@ -154,7 +154,7 @@
      "n": "Krastavac",
      "loose": 1,
      "st": 100,
-     "perKg": 1.29,
+     "perKg": 1.59,
      "id": "0082225"
     },
     "tikvice": {
@@ -193,7 +193,7 @@
      "n": "Kupus bijeli",
      "loose": 1,
      "st": 500,
-     "perKg": 0.55,
+     "perKg": 0.69,
      "id": "0082955"
     },
     "salata": {
@@ -232,7 +232,7 @@
      "n": "Naranča",
      "loose": 1,
      "st": 100,
-     "perKg": 1.49,
+     "perKg": 1.09,
      "id": "0080135"
     },
     "mandarine": {
@@ -299,12 +299,12 @@
   },
   "kaufland": {
    "name": "Kaufland",
-   "date": "2026-11-13",
+   "date": "2026-11-19",
    "items": {
     "mlijeko": {
      "n": "KLC.Trajno mlijeko1,5%m.m.1L",
      "pk": 1000,
-     "pp": 0.6,
+     "pp": 0.95,
      "id": "00403941"
     },
     "svjezi_sir": {
@@ -316,7 +316,7 @@
     "jaja": {
      "n": "Balticovo Jaja svj.M podni uzgoj 10/1_OC",
      "pk": 10,
-     "pp": 2.39,
+     "pp": 1.59,
      "id": "20893551"
     },
     "sunka": {
@@ -357,7 +357,7 @@
      "id": "00404660"
     },
     "grcki": {
-     "n": "Kolios Grčki jogurt natural 0%m.m.500g · u malo poslovnica",
+     "n": "Kolios Grčki jogurt natural 0%m.m.500g",
      "pk": 500,
      "pp": 2.49,
      "id": "20975970"
@@ -372,7 +372,7 @@
     "mljeveno": {
      "n": "KPur. Miješano mljeveno meso 850 g",
      "pk": 850,
-     "pp": 5.99,
+     "pp": 4.89,
      "id": "00098484"
     },
     "oslic": {
@@ -414,7 +414,7 @@
     "riza": {
      "n": "KLC.Riža dugog zrna 1 kg_OC",
      "pk": 1000,
-     "pp": 1.59,
+     "pp": 1.29,
      "id": "00119501"
     },
     "tjestenina": {
@@ -458,21 +458,21 @@
      "n": "Krastavac",
      "loose": 1,
      "st": 100,
-     "perKg": 1.69,
+     "perKg": 1.59,
      "id": "09700739"
     },
     "tikvice": {
      "n": "Tikvica",
      "loose": 1,
      "st": 100,
-     "perKg": 1.69,
+     "perKg": 1.99,
      "id": "09700763"
     },
     "mrkva": {
      "n": "Mrkva_OC",
      "loose": 1,
      "st": 100,
-     "perKg": 0.49,
+     "perKg": 0.89,
      "id": "09700733"
     },
     "mahune": {
@@ -482,7 +482,7 @@
      "id": "00097013"
     },
     "blitva": {
-     "n": "Blitva vezica 500g",
+     "n": "Blitva vezica 500g · u malo poslovnica",
      "pk": 500,
      "pp": 1.79,
      "id": "00034319"
@@ -490,14 +490,14 @@
     "brokula": {
      "n": "Brokula 500g",
      "pk": 500,
-     "pp": 0.99,
+     "pp": 1.49,
      "id": "09701160"
     },
     "kupus": {
      "n": "Kupus_OC",
      "loose": 1,
      "st": 500,
-     "perKg": 0.79,
+     "perKg": 0.69,
      "id": "09700744"
     },
     "salata": {
@@ -535,7 +535,7 @@
     "naranca": {
      "n": "Naranča 2kg mrežica",
      "pk": 2000,
-     "pp": 2.48,
+     "pp": 1.99,
      "id": "09700901"
     },
     "mandarine": {
@@ -554,7 +554,7 @@
     "ulje_m": {
      "n": "KLC.Maslinovo ulje extra djev.0,75L",
      "pk": 750,
-     "pp": 6.69,
+     "pp": 4.19,
      "id": "20668800"
     },
     "ulje": {
@@ -590,5 +590,5 @@
    }
   }
  },
- "date": "2026-11-13"
+ "date": "2026-11-19"
 }
